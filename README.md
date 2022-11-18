@@ -1,3 +1,6 @@
-This repository contains my program files from Visual Studio. 
+This repository contains a Visual Basics Data Analysis program.
 
-This programs were created during a computer programming class, as an introduction to programming, at the University of Florida.
+This program computes the mean and the standard deviation. Two types of data 
+are  considered:  a  list  of  numbers  defined  as  a  data  set,  and  a  list  of  data  sets  (a  data 
+group). Thus, the program computes not only the mean and std. dev of a particular data set 
+but also the mean of means (of all data sets).
