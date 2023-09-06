@@ -1,29 +1,26 @@
-# Text Summarizer using OpenAI
+# Text and Audio Summarizer using OpenAI
+Welcome to my AI-powered transcription and summarization project! This set of Python scripts is designed to transcribe audio from customer interviews during exploratory research, followed by a summarization step to analyze the transcriptions without human bias, allowing for faster and more objective analysis of qualitative data.
 
-Welcome to my text summarization project! This Python script utilizes OpenAI's API, specifically the GPT-3 model, to automatically summarize large texts. By breaking down large volumes of text and intelligently summarizing them, this tool showcases how state-of-the-art AI models can simplify vast information.
+## Highlights:
+- **Audio Transcription:** Convert customer interviews in audio format into readable text using OpenAI's Whisper model.
+- **Chunking Mechanism:** Large transcribed texts are broken down into smaller sections to maximize the efficiency and effectiveness of the OpenAI API.
+- **Overlap Mechanism:** An overlap mechanism ensures continuity and maintains context between chunks of transcribed text.
+- **Batch Summarization:** Designed to handle and summarize multiple .txt files from a specified directory.
+- **Summary of Summaries:** After individual summaries are generated, the script crafts a "summary of summaries", offering a high-level perspective on all provided transcriptions.
 
-## Highlights
-
-- **Chunking Texts:** The script chunks large texts into smaller sections to better handle them using the OpenAI API.
-- **Overlap Mechanism:** To ensure continuity and context, there's an overlap mechanism in place.
-- **Batch Summarization:** Can summarize multiple .txt files present in a directory.
-- **Summary of Summaries:** After summarizing individual files, the script can also provide a "summary of summaries" for an overarching perspective.
-
-## Technical Prerequisites and Libraries
+## Technical Prerequisites and Libraries:
 Python 3.x
 Required Python libraries: os, glob, requests, tqdm, openai, and nltk.
 
-## Code
-The script for the text summarization can be found here: [text_summarizer.py](./text_summarizer.py).
+## How It Works:
+- **API Integration:** These projects require an OpenAI API key. The scripts fetch this key from an environment variable to authenticate and interact with OpenAI's platform.
+- **Audio to Text:** The scripts transcribe audio interviews using OpenAI's Whisper model, converting voice data into text for further processing.
+- **Text Tokenization:** Leveraging the Natural Language Toolkit (NLTK), the scripts tokenize the transcribed texts, preparing them for summarization.
+- **Iterative Summarization:** For each transcribed .txt file, the script breaks down the text, summarizes each chunk, and then combines the results into a concise summary.
+- **Output Generation:** Individual summaries are saved, and a comprehensive "summary of summaries" is produced.
 
-## How It Works
-- **API Integration:** This project requires an OpenAI API key. The script fetches this from an environment variable to authenticate and interact with OpenAI's platform.
-- **Text Tokenization:** Leveraging the Natural Language Toolkit (NLTK), the script tokenizes input texts, preparing them for processing.
-- **Iterative Summarization:** For each .txt file in the specified directory, the script breaks down the text, summarizes each chunk, and then compiles the results into a cohesive summary.
-- **Output Generation:** Individual summaries are saved, and finally, a comprehensive "summary of summaries" is generated.
+## Portfolio Context:
+This project serves as a showcase of integrating external AI-powered services into Python applications, effectively processing vast datasets from voice to summarized text. The primary goal is to highlight the potential of AI in transcribing, simplifying, and condensing information, turning a qualitative dataset into actionable insights.
 
-## Portfolio Context
-This project serves as a demonstration of integrating external AI-powered services into Python applications and effectively processing large datasets. The overarching aim is to showcase the potential of AI in simplifying and condensing information, making it more accessible and digestible.
-
-## Feedback & Contact
-I appreciate your interest in my work! If you have feedback, questions, or just want to connect, feel free to reach out at nicolli.decastro@gmail.com.
+## Feedback & Contact:
+I appreciate your interest in my work! If you have feedback, or questions, or wish to connect, please don't hesitate to reach out.
