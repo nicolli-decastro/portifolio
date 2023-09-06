@@ -9,8 +9,8 @@ Welcome to my AI-powered transcription and summarization project! This set of Py
 - **Summary of Summaries:** After individual summaries are generated, the script crafts a "summary of summaries", offering a high-level perspective on all provided transcriptions.
 
 ## Technical Prerequisites and Libraries:
-Python 3.x
-Required Python libraries: os, glob, requests, tqdm, openai, and nltk.
+- Python 3.x
+- Required Python libraries: os, glob, requests, tqdm, openai, and nltk.
 
 ## How It Works:
 - **API Integration:** These projects require an OpenAI API key. The scripts fetch this key from an environment variable to authenticate and interact with OpenAI's platform.
